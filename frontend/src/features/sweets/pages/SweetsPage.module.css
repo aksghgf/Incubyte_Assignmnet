@@ -1,0 +1,12 @@
+.page {
+    min-height: calc(100vh - 80px);
+    background: var(--bg-secondary);
+    padding: 3rem 2rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding-bottom: 1rem;
+    }
+}

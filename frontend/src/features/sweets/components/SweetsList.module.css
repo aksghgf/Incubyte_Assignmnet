@@ -1,0 +1,117 @@
+.sweetsList {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.searchInput {
+    flex: 1;
+    min-width: 300px;
+    padding: 0.875rem 1.25rem;
+    background: var(--bg-primary);
+    border: 1px solid #e5e5e5;
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    transition: all var(--transition-base);
+}
+
+.searchInput::placeholder {
+    color: var(--text-muted);
+}
+
+.searchInput:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(228, 44, 44, 0.1);
+}
+
+.categoryFilter {
+    padding: 0.875rem 1.25rem;
+    background: var(--bg-primary);
+    border: 1px solid #e5e5e5;
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    cursor: pointer;
+    min-width: 180px;
+    transition: all var(--transition-base);
+}
+
+.categoryFilter:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(228, 44, 44, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    row-gap: 3rem;
+    column-gap: 2rem;
+}
+
+.loading,
+.error,
+.empty {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--text-secondary);
+}
+
+.loading {
+    font-size: 1.125rem;
+}
+
+.error {
+    color: var(--error);
+    font-size: 1rem;
+}
+
+.empty h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.empty p {
+    color: var(--text-muted);
+}
+
+@media (max-width: 1024px) {
+    .sweetsList {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sweetsList {
+        padding: 2rem 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .searchInput {
+        min-width: 100%;
+    }
+
+    .categoryFilter {
+        width: 100%;
+    }
+}

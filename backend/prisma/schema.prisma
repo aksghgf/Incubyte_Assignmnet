@@ -6,7 +6,7 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = env("mongodb+srv://Abhishektiwari:Abhishek_20413@cluster0.06m6gcn.mongodb.net/sweetshop?retryWrites=true&w=majority")
+  url      = env("DATABASE_URL")
 }
 
 enum Role {

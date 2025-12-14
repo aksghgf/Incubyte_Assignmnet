@@ -2,6 +2,8 @@
 
 A full-stack sweet shop management system built with modern web technologies, featuring user authentication, inventory management, and role-based access control.
 
+# Deployement URL  https://incubyte-assignmnet.vercel.app
+
 ## 🚀 Features
 
 - **User Authentication**: Secure JWT-based authentication with registration and login

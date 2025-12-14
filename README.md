@@ -4,6 +4,12 @@ A full-stack sweet shop management system built with modern web technologies, fe
 
 # Deployement URL  https://incubyte-assignmnet.vercel.app
 
+## Testing Admin Account
+
+email : admin@first.com
+password : adminfirst
+
+
 ## 🚀 Features
 
 - **User Authentication**: Secure JWT-based authentication with registration and login

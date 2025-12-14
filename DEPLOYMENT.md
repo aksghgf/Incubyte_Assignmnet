@@ -80,6 +80,3 @@ See [deployment_guide.md](file:///C:/Users/kumar/.gemini/antigravity/brain/280fa
 
 📊 **MongoDB Atlas**: Make sure to allow connections from anywhere (0.0.0.0/0) in Network Access
 
----
-
-**Good luck with your deployment!** 🎉

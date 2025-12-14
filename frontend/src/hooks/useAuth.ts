@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { authApi } from '../services/api/auth.api';
 import { STORAGE_KEYS } from '../config/constants';
-import type { AuthResponse } from '../types/user.types';
 
 interface User {
     id: string;

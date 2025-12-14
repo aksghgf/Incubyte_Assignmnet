@@ -4,8 +4,7 @@ import {
     useSweets,
     useCreateSweet,
     useUpdateSweet,
-    useDeleteSweet,
-    useRestockSweet
+    useDeleteSweet
 } from '../../../hooks/useSweets';
 import { SweetsList } from '../../sweets/components/SweetsList';
 import { SweetForm } from '../components/SweetForm';
@@ -22,7 +21,6 @@ export function AdminDashboard() {
     const createMutation = useCreateSweet();
     const updateMutation = useUpdateSweet();
     const deleteMutation = useDeleteSweet();
-    const restockMutation = useRestockSweet();
 
     const [showForm, setShowForm] = useState(false);
     const [editingSweet, setEditingSweet] = useState<Sweet | null>(null);

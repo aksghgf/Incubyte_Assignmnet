@@ -24,7 +24,7 @@ export function SweetForm({ sweet, onSubmit, onCancel }: SweetFormProps) {
         if (sweet) {
             setFormData({
                 name: sweet.name,
-                description: sweet.description,
+                description: sweet.description || '',
                 price: sweet.price.toString(),
                 quantity: sweet.quantity.toString(),
                 category: sweet.category,
